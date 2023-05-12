@@ -1,0 +1,13 @@
+<h1>Showing Pic: </h1>
+<hr />
+
+<input type="button" value="Next" (click)="nextPhoto()" />
+<input type="button" value="SlideShow" (click)="slideShow()" />
+<input type="button" value="Stop" (click)="stopShow()" />
+<input type="button" value="Previous" (click)="previousPhoto()" />
+
+<br>
+<br>
+<br>
+
+<img id="photo" [src]="imgSrc" width="300" height="300" />
