@@ -1,0 +1,31 @@
+<div class="container text-center">
+  <h2 class="text-center">Student Details</h2>
+  <br>
+  <div *ngIf="Student" class="alert alert-success">
+    <div class="row">
+      <div class="col">
+        Name: <label>{{Student.name}}</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Age: <label>{{Student.age}}</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Email: <label>{{Student.email}}</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Phone: <label>{{Student.phone}}</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Courses: <label>{{Student.courses}}</label>
+      </div>
+    </div>
+  </div>
+</div>

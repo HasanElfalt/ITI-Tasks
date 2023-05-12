@@ -1,0 +1,79 @@
+{
+  "Students": [
+    {
+      "name": "Hassan",
+      "age": "27",
+      "email": "hassanelfalt60@gmail.com",
+      "phone": "+201114827838",
+      "courses": [
+        "Node",
+        "Angular",
+        "Flutter",
+        "ReactNative"
+      ],
+      "id": 1
+    },
+    {
+      "name": "Hassan Mostafa",
+      "age": "23",
+      "email": "hassan@gmail.com",
+      "phone": "012222222222",
+      "courses": [
+        "Node JS",
+        "React JS",
+        "Flutter"
+      ],
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Mahmoud",
+      "age": 22,
+      "email": "mahmoud@gmail.com",
+      "phone": "0100000000",
+      "courses": [
+        "Js",
+        "Angular",
+        "Flutter",
+        "ReactNative"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ahmed Saeed",
+      "age": 21,
+      "email": "ahmedS@gmail.com",
+      "phone": "0144444444444",
+      "courses": [
+        "C#",
+        ".Net",
+        "Flutter",
+        "Xamarin"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ahmed Kamal",
+      "age": 25,
+      "email": "ahmedKamal@gmail.com",
+      "phone": "01555555555",
+      "courses": [
+        "Xamarin",
+        "Flutter",
+        "ReactNative"
+      ]
+    },
+    {
+      "name": "Youssef",
+      "age": "20",
+      "email": "yousef@gmail.com",
+      "phone": "0166666666",
+      "courses": [
+        "JavaScript",
+        "Node",
+        "React JS"
+      ],
+      "id": 6
+    }
+  ]
+}

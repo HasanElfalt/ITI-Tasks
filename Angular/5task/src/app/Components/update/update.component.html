@@ -1,0 +1,32 @@
+
+<div class="container text-center" *ngIf="Student">
+  <h2 class="text-center">Update</h2>
+  <br>
+  <form class="alert alert-info">
+      <div class="form-group d-flex my-3">
+        <label class="col-2">Name:</label>
+        <input #name type="text" class="form-control" value="{{Student.name}}">
+      </div>
+      <div class="form-group d-flex my-3">
+        <label class="col-2">Age:</label>
+        <input #age type="text" class="form-control" value="{{Student.age}}">
+      </div>
+      <div class="form-group d-flex my-3">
+        <label class="col-2">Email:</label>
+        <input #email type="email" class="form-control" value="{{Student.email}}">
+      </div>
+      <div class="form-group d-flex my-3">
+        <label class="col-2">Phone:</label>
+        <input #phone type="text" class="form-control" value="{{Student.phone}}">
+      </div>
+      <div class="form-group d-flex my-3">
+        <label class="col-2">Courses:</label>
+        <div id="myDiv">
+          <input type="text" class="form-control" *ngFor="let s of Student.courses; let indexOfelement=index;" value="{{s}}">
+        </div>
+      </div>
+
+      <input class="btn btn-outline-success" value="Update" type="submit" (click)="Update(name.value, age.value, email.value, phone.value)">
+
+  </form>
+</div>
