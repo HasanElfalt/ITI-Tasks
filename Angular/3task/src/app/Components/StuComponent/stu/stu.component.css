@@ -1,0 +1,23 @@
+h1 {
+    background-color: beige;
+    color: blueviolet;
+    text-align: center;
+    width: 50%;
+    margin: 5px auto;
+    border-bottom: 2px dashed blueviolet;
+    border-radius: 10px;
+}
+table {
+    background-color: azure;
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+tr,
+th,
+td {
+    border: 1px solid black;
+}
