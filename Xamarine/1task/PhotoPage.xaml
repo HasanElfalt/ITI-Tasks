@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.PhotoPage"
+             Title="nyc_photographer">
+    <VerticalStackLayout>
+
+        <Image
+            Source="nature.jpg"
+            HorizontalOptions="Center" />
+
+        <HorizontalStackLayout
+            Spacing="5">
+            <Label
+                Text="Like"
+                TextColor="#3E8EED"
+                Padding="15"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Label
+                Text="Comment"
+                Padding="15"
+                FontSize="18"
+                TextColor="#3E8EED"
+                HorizontalOptions="Center" />
+            <Label
+                Text="Share"
+                FontSize="18"
+                Padding="15"
+                TextColor="#3E8EED"
+                HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <Label
+            Margin="15,20,0,0"
+                Text="700 likes"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="20"/>
+
+        <Label
+            Margin="15,5,10,0"
+                Text="This is a shot yesterday in a Skanor, Sweden, when driving home, from a couple of days of work in Denemark "
+                TextColor="Black"
+                FontSize="18" />
+    </VerticalStackLayout>
+</ContentPage>

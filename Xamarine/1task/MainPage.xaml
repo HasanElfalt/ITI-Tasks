@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="Blue"
+             Title=""
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Welcome to Xamarine"
+                TextColor="White"
+                SemanticProperties.HeadingLevel="Level1"
+                FontAttributes="Bold"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+            <Label
+                Text="Cross-platform apps made easy"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Cross platform app"
+                TextColor="White"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="login"
+                Text="Login"
+                BackgroundColor="RoyalBlue"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="register"
+                Text="Register"
+                BackgroundColor="RoyalBlue"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
