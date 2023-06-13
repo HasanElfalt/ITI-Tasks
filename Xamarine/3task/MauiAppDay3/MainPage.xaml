@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppDay3.MainPage">
+
+    <VerticalStackLayout>
+        <SearchBar TextChanged="SearchBar_TextChanged"></SearchBar>
+        <Label Margin="10" Text="Recent Searches" FontAttributes="Bold" FontSize="16"></Label>
+        <ListView x:Name="planesList" Margin="10"
+                  IsPullToRefreshEnabled="True"
+                  Refreshing="planesList_Refreshing" ItemSelected="planesList_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Destination}" FontAttributes="Bold" FontSize="20"></Label>
+                            <HorizontalStackLayout>
+                                <Label Text="{Binding DepartDate}" FontSize="14" TextColor="SteelBlue"></Label>
+                                <Label Text=" - "></Label>
+                                <Label Text="{Binding ArrDate}" TextColor="SteelBlue"></Label>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Delete" Clicked="MenuItem_Clicked" 
+                                      CommandParameter="{Binding}"
+                                      IsDestructive="True"></MenuItem>
+                        </ViewCell.ContextActions>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+
+</ContentPage>
